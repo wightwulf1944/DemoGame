@@ -51,12 +51,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>xspeed = irandom_range(10,20);
-yspeed = irandom_range(10,20);
-
-hspeed = choose(-xspeed,xspeed);
-vspeed = choose(-yspeed,yspeed);
-
+            <string>direction = irandom_range(25,65) + choose(0,90,180,270);
 speed = 20;
 </string>
           </argument>
@@ -85,6 +80,53 @@ speed = 20;
           <argument>
             <kind>4</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var threshold = 70;
+var complement = 90 - threshold;
+
+if(direction &gt; threshold &amp;&amp; direction &lt; 90)
+{
+    show_debug_message(string(direction) + "TRIGERRED1");
+    direction = threshold;
+    show_debug_message(direction);
+}
+else if(direction &gt;= 90 &amp;&amp; direction &lt; 90 + complement)
+{
+    show_debug_message(string(direction) + "TRIGERRED2");
+    direction = 90 + complement;
+    show_debug_message(direction);
+}
+else if(direction &gt; 270 - complement &amp;&amp; direction &lt; 270)
+{
+    show_debug_message(string(direction) + "TRIGERRED3");
+    direction = 270 - complement;
+    show_debug_message(direction);
+}
+else if(direction &gt;= 270 &amp;&amp; direction &lt; 270 + complement)
+{
+    show_debug_message(string(direction) + "TRIGERRED4");
+    direction = 270 + complement;
+    show_debug_message(direction);
+}
+</string>
           </argument>
         </arguments>
       </action>
@@ -135,6 +177,53 @@ speed = 20;
           <argument>
             <kind>4</kind>
             <string>1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var threshold = 70;
+var complement = 90 - threshold;
+
+if(direction &gt; threshold &amp;&amp; direction &lt; 90)
+{
+    show_debug_message(string(direction) + "TRIGERRED1");
+    direction = threshold;
+    show_debug_message(direction);
+}
+else if(direction &gt;= 90 &amp;&amp; direction &lt; 90 + complement)
+{
+    show_debug_message(string(direction) + "TRIGERRED2");
+    direction = 90 + complement;
+    show_debug_message(direction);
+}
+else if(direction &gt; 270 - complement &amp;&amp; direction &lt; 270)
+{
+    show_debug_message(string(direction) + "TRIGERRED3");
+    direction = 270 - complement;
+    show_debug_message(direction);
+}
+else if(direction &gt;= 270 &amp;&amp; direction &lt; 270 + complement)
+{
+    show_debug_message(string(direction) + "TRIGERRED4");
+    direction = 270 + complement;
+    show_debug_message(direction);
+}
+</string>
           </argument>
         </arguments>
       </action>
