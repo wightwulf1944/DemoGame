@@ -19,6 +19,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\scorefont</font>
+    <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
     <object>objects\wall</object>
