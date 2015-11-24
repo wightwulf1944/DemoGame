@@ -54,7 +54,7 @@
             <string>///Serve ball at a random direction
 
 direction = irandom_range(25,65) + choose(0,90,180,270);
-speed = 15;
+speed = 13;
 </string>
           </argument>
         </arguments>
@@ -103,7 +103,7 @@ speed = 15;
             <kind>1</kind>
             <string>///Prevent ball from bouncing at a sharp angle
 
-var threshold = 70;
+var threshold = 65;
 var complement = 90 - threshold;
 
 if(direction &gt; threshold &amp;&amp; direction &lt; 90)
@@ -202,7 +202,7 @@ else if(direction &gt;= 270 &amp;&amp; direction &lt; 270 + complement)
             <kind>1</kind>
             <string>///Prevent ball from bouncing at a sharp angle
 
-var threshold = 70;
+var threshold = 65;
 var complement = 90 - threshold;
 
 if(direction &gt; threshold &amp;&amp; direction &lt; 90)
