@@ -31,8 +31,8 @@
     <object>objects\textbox</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\intro</room>
     <room>rooms\pong</room>
+    <room>rooms\intro</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

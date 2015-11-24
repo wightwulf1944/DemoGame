@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Move paddle towards ball
 
-if( ball.hspeed &gt;= 0 ) move_towards_point( x, ball.y, 9 );
+if( ball.hspeed &gt;= 0 ) move_towards_point( 688, ball.y, 7 );
 </string>
           </argument>
         </arguments>
