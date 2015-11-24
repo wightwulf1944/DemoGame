@@ -17,7 +17,6 @@
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\scorefont</font>
     <font>fonts\textfont</font>
