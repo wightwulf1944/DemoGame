@@ -29,7 +29,8 @@
     <object>objects\scorekeeper</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\pong</room>
+    <room>rooms\intro</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
