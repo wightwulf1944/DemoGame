@@ -19,6 +19,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\scorefont</font>
+    <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
     <object>objects\wall</object>
@@ -28,7 +29,8 @@
     <object>objects\scorekeeper</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\pong</room>
+    <room>rooms\intro</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
