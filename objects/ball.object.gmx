@@ -54,7 +54,7 @@
             <string>///Serve ball at a random direction
 
 direction = irandom_range(25,65) + choose(0,90,180,270);
-speed = 20;
+speed = 15;
 </string>
           </argument>
         </arguments>

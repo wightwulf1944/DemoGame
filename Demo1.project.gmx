@@ -17,9 +17,10 @@
     <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\scorefont</font>
-    <font>fonts\font2</font>
+    <font>fonts\textfont</font>
   </fonts>
   <objects name="objects">
     <object>objects\wall</object>
@@ -27,6 +28,7 @@
     <object>objects\ball</object>
     <object>objects\paddle_bot</object>
     <object>objects\scorekeeper</object>
+    <object>objects\textbox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\pong</room>
