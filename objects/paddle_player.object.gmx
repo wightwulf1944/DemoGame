@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = xprevious;
+            <string>/// Prevent paddle from intersecting with ball
+
+x = xprevious;
 y = yprevious;
 </string>
           </argument>
