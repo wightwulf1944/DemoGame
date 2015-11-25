@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>paddle_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="3" enumb="0">
@@ -27,60 +27,8 @@
             <kind>1</kind>
             <string>///Move paddle towards ball
 
-if( ball.hspeed &gt;= 0 ) move_towards_point( 688, ball.y, 7 );
+if( ball.hspeed &gt;= 0 ) move_towards_point( x, ball.y, 5 );
 </string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="ball">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Prevent paddle from intersecting with ball
-
-x = xprevious;
-y = yprevious;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="wall">
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000010000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
           </argument>
         </arguments>
       </action>

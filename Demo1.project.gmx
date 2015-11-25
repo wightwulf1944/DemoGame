@@ -13,25 +13,27 @@
     <sprite>sprites\spr_paddle</sprite>
     <sprite>sprites\spr_ball</sprite>
   </sprites>
-  <backgrounds name="background">
-    <background>background\background1</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\scorefont</font>
     <font>fonts\textfont</font>
   </fonts>
   <objects name="objects">
     <object>objects\wall</object>
-    <object>objects\paddle_player</object>
     <object>objects\ball</object>
+    <object>objects\paddle_parent</object>
+    <object>objects\paddle_player</object>
     <object>objects\paddle_bot</object>
     <object>objects\scorekeeper</object>
-    <object>objects\textbox</object>
+    <object>objects\textbox_parent</object>
+    <object>objects\textbox_pong</object>
+    <object>objects\textbox_intro</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\pong</room>
     <room>rooms\intro</room>
+    <room>rooms\pong</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

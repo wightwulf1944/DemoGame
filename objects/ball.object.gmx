@@ -60,31 +60,7 @@ speed = 13;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="paddle_bot">
-      <action>
-        <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
-          </argument>
-        </arguments>
-      </action>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -101,65 +77,28 @@ speed = 13;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Prevent ball from bouncing at a sharp angle
+            <string>///Check if outside pong table
 
-var threshold = 65;
-var complement = 90 - threshold;
-
-if(direction &gt; threshold &amp;&amp; direction &lt; 90)
+if( (x &lt; 320) || (x &gt; 1024) )
 {
-    show_debug_message(string(direction) + "TRIGERRED1");
-    direction = threshold;
-    show_debug_message(direction);
-}
-else if(direction &gt;= 90 &amp;&amp; direction &lt; 90 + complement)
-{
-    show_debug_message(string(direction) + "TRIGERRED2");
-    direction = 90 + complement;
-    show_debug_message(direction);
-}
-else if(direction &gt; 270 - complement &amp;&amp; direction &lt; 270)
-{
-    show_debug_message(string(direction) + "TRIGERRED3");
-    direction = 270 - complement;
-    show_debug_message(direction);
-}
-else if(direction &gt;= 270 &amp;&amp; direction &lt; 270 + complement)
-{
-    show_debug_message(string(direction) + "TRIGERRED4");
-    direction = 270 + complement;
-    show_debug_message(direction);
+    // Award point
+    if(hspeed &gt; 0) global.playerscore += 1;
+    else global.botscore += 1;
+    
+    // Reset position
+    speed = 0;
+    x = xstart;
+    y = ystart;
+    
+    // Set start alarm
+    alarm[0] = 60;
 }
 </string>
           </argument>
         </arguments>
       </action>
-      <action>
-        <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>6</kind>
-            <sound>beep</sound>
-          </argument>
-          <argument>
-            <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
     </event>
-    <event eventtype="4" ename="paddle_player">
+    <event eventtype="4" ename="paddle_parent">
       <action>
         <libid>1</libid>
         <id>115</id>
@@ -202,7 +141,7 @@ else if(direction &gt;= 270 &amp;&amp; direction &lt; 270 + complement)
             <kind>1</kind>
             <string>///Prevent ball from bouncing at a sharp angle
 
-var threshold = 65;
+var threshold = 60;
 var complement = 90 - threshold;
 
 if(direction &gt; threshold &amp;&amp; direction &lt; 90)
@@ -303,100 +242,6 @@ else if(direction &gt;= 270 &amp;&amp; direction &lt; 270 + complement)
           </argument>
           <argument>
             <kind>3</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Award point
-
-if(hspeed &gt; 0)
-{
-    global.playerscore += 1;
-}
-else
-{
-    global.botscore += 1;
-}   
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>110</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move_start</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>000010000</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>301</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_alarm</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>60</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
             <string>0</string>
           </argument>
         </arguments>
