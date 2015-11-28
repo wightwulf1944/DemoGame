@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="4" ename="ball">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,25 +25,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Prevent paddle from intersecting with ball
-
-x = xprevious;
-y = yprevious;
+            <string>n = 0;
+messageDraw = "";
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_solid">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>101</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_move</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
@@ -51,11 +49,54 @@ y = yprevious;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>000010000</string>
+            <string>///Draw box and text
+
+// Draw box
+var x1 = x;
+var y1 = y;
+var x2 = 304;
+var y2 = 558;
+var linewidth = 2;
+draw_set_color( c_white );
+
+draw_line_width( x1, y1, x2, y1, linewidth );
+draw_line_width( x1, y1, x1, y2, linewidth );
+draw_line_width( x2, y1, x2, y2, linewidth );
+draw_line_width( x1, y2, x2, y2, linewidth );
+
+//Draw text
+hPadding = 16;
+vPadding = 18;
+textAreaWidth = x2 - x1 - ( hPadding * 2 );
+draw_set_font( textfont );
+draw_text_ext( x+hPadding, y+vPadding, messageDraw, -1, textAreaWidth );
+</string>
           </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
           <argument>
-            <kind>0</kind>
-            <string>0</string>
+            <kind>1</kind>
+            <string>///Change drawn message
+if( n++ &lt; array_length_1d( room.message ) )
+{    messageDraw = room.message[n++]; }
+else if room_exists( room_next( room ) ) room_goto_next();
+</string>
           </argument>
         </arguments>
       </action>

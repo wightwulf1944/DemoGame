@@ -197,7 +197,7 @@ else if(direction &gt;= 270 &amp;&amp; direction &lt; 270 + complement)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="wall">
+    <event eventtype="4" ename="obj_solid">
       <action>
         <libid>1</libid>
         <id>115</id>
