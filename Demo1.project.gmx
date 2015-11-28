@@ -32,9 +32,9 @@
     <object>objects\platform_player</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\platformer</room>
     <room>rooms\intro</room>
     <room>rooms\pong</room>
+    <room>rooms\platformer</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
