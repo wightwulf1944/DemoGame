@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="1" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\boop</sound>
@@ -22,6 +23,7 @@
   </fonts>
   <objects name="objects">
     <object>objects\textbox</object>
+    <object>objects\textbox_bottomright</object>
     <object>objects\obj_solid</object>
     <object>objects\ball</object>
     <object>objects\paddle_parent</object>
@@ -32,10 +34,10 @@
     <object>objects\platform_player</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\platformer</room>
     <room>rooms\intro</room>
     <room>rooms\pong1</room>
     <room>rooms\pong2</room>
+    <room>rooms\platformer1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

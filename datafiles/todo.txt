@@ -1,0 +1,3 @@
+﻿move text box at the beginning to the center
+move text box to bottom of pong and platformer lvl
+support multiple lines of text

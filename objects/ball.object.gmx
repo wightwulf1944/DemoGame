@@ -79,7 +79,7 @@ speed = 13;
             <kind>1</kind>
             <string>///Check if outside pong table
 
-if( (x &lt; 320) || (x &gt; 1024) )
+if( (x &lt; 96) || (x &gt; 704) )
 {
     // Award point
     if(hspeed &gt; 0) global.playerscore += 1;

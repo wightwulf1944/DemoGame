@@ -54,8 +54,8 @@ messageDraw[0] = "";
 // Draw box
 var x1 = x;
 var y1 = y;
-var x2 = 304;
-var y2 = 558;
+var x2 = textbox_bottomright.x;
+var y2 = textbox_bottomright.y;
 var linewidth = 2;
 draw_set_color( c_white );
 
