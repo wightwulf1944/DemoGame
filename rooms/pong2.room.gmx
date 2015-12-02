@@ -13,8 +13,8 @@
   <code>// Textbox script
 textbox.messageDraw[0] = "I'd like to talk about the ai here.";
 textbox.messageDraw[1] = "The bot simply follows the Y axis of the ball while being constrained by the walls.";
-textbox.messageDraw[2] = "It also only changes directions when the ball is moving towards it's side of the table.";
-textbox.messageDraw[3] = "To provide the player an advantage the ai also moves at a slower rate than the player's paddle.";
+textbox.messageDraw[2] = "It also only moves when the ball is moving towards it's side of the table.";
+textbox.messageDraw[3] = "To give the player an advantage the ai moves at a slower rate than the player's paddle.";
 textbox.messageDraw[4] = "Most of the coding done for this segment was on the ai alone.";
 textbox.messageDraw[5] = "The next game is a platformer. Press 'space' once you're ready to go to the next section.";</code>
   <enableViews>0</enableViews>
