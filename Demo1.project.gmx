@@ -16,7 +16,6 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\scorefont</font>
     <font>fonts\textfont</font>
@@ -27,13 +26,15 @@
     <object>objects\ball</object>
     <object>objects\paddle_parent</object>
     <object>objects\paddle_player</object>
-    <object>objects\paddle_bot</object>
+    <object>objects\paddle_bot1</object>
+    <object>objects\paddle_bot2</object>
     <object>objects\scorekeeper</object>
     <object>objects\platform_player</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>
-    <room>rooms\pong</room>
+    <room>rooms\pong1</room>
+    <room>rooms\pong2</room>
     <room>rooms\platformer</room>
   </rooms>
   <help>

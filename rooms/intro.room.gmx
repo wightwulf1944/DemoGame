@@ -11,8 +11,14 @@
   <colour>0</colour>
   <showcolour>-1</showcolour>
   <code>//Textbox script
-textbox.messageDraw[0] = "This is the intro room. Press 'space' to continue";
-textbox.messageDraw[1] = "Good job! Now press 'space' to go to the next stage.";</code>
+textbox.messageDraw[0] = "Hello... Press 'space' to continue.";
+textbox.messageDraw[1] = "Thank you for trying out my demo.";
+textbox.messageDraw[2] = "I made this game as a measure of my skills and also as an experiment.";
+textbox.messageDraw[3] = "This game was made using Yoyo's game maker studio.";
+textbox.messageDraw[4] = "Approximately 50 hours of total work has been put into it's development.";
+textbox.messageDraw[5] = "Which actually isn't much.";
+textbox.messageDraw[6] = "4 games are included. And in each game, there will be an accompanying description.";
+textbox.messageDraw[7] = "First, let's try pong!";</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
