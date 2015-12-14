@@ -3,14 +3,20 @@
   <caption></caption>
   <width>800</width>
   <height>600</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>12</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>2179393</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>//Textbox script
+textbox.messageDraw[0] = "This is my attempt at a turn based tactics UI."
+textbox.messageDraw[1] = "Use your mouse and click within the character's move range. Feel free to explore."
+textbox.messageDraw[2] = "This is by far the most complex out of all these demos."
+textbox.messageDraw[3] = "A lot of math was involved in calculating an isometric grid display."
+textbox.messageDraw[4] = "Behind the scenes all movement calculations are mapped to cell coordinates."
+textbox.messageDraw[5] = "That's all for this demo. Press 'space' when satisfied."</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -53,6 +59,8 @@
   <instances>
     <instance objName="grid" x="128" y="160" name="inst_E7395979" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="cellUnit" x="320" y="288" name="inst_42E22316" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="textbox" x="16" y="480" name="inst_1617225F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="textbox_bottomright" x="784" y="588" name="inst_424BC740" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

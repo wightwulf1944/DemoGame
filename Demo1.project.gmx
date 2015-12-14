@@ -14,9 +14,17 @@
     <sprite>sprites\spr_paddle</sprite>
     <sprite>sprites\spr_ball</sprite>
     <sprite>sprites\spr_platformer</sprite>
+    <sprite>sprites\NW</sprite>
+    <sprite>sprites\SE</sprite>
+    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\coordToXPoint.gml</script>
+    <script>scripts\coordToYPoint.gml</script>
+    <script>scripts\setHighlightPointsList.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\scorefont</font>
     <font>fonts\textfont</font>
@@ -32,12 +40,16 @@
     <object>objects\paddle_bot2</object>
     <object>objects\scorekeeper</object>
     <object>objects\platform_player</object>
+    <object>objects\cellUnit</object>
+    <object>objects\grid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\intro</room>
     <room>rooms\pong1</room>
     <room>rooms\pong2</room>
     <room>rooms\platformer1</room>
+    <room>rooms\tactics1</room>
+    <room>rooms\outro</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

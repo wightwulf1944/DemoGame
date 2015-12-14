@@ -14,9 +14,9 @@
 textbox.messageDraw[0] = "Hello! Press 'space' to continue..."
 textbox.messageDraw[1] = "Thank you for trying out my demo."
 textbox.messageDraw[2] = "I made this as a measure of my skills and also as an experiment."
-textbox.messageDraw[3] = "This was made using Yoyo's game maker studio and approximately 50 hours of total work has been put into its development."
+textbox.messageDraw[3] = "This was made using Yoyo's game maker studio and approximately 80 hours of total work has been put into its development."
 textbox.messageDraw[4] = "Which actually isn't much."
-textbox.messageDraw[5] = "4 games are included. And in each game, there will be an accompanying description."
+textbox.messageDraw[5] = "3 demos are included. And in each game, there will be an accompanying description."
 textbox.messageDraw[6] = "First, let's try pong!"</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

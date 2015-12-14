@@ -11,9 +11,10 @@
   <colour>10132122</colour>
   <showcolour>-1</showcolour>
   <code>//Textbox script
-textbox.messageDraw[0] = "This is the intro room. Press 'space' to continue";
-textbox.messageDraw[1] = "Good job! Now press 'space' to go to the next stage.";
-textbox.messageDraw[2] = "try again";</code>
+textbox.messageDraw[0] = "This is a simple platformer"
+textbox.messageDraw[1] = "Theres really not much to say in these last two demos. This one in particular turned out to be really easy to make."
+textbox.messageDraw[2] = "Use the W,A,S,D, keys to move the character. Feel free to explore."
+textbox.messageDraw[3] = "Try reaching the platform at the top right corner! You may press 'space' once you're ready to see the last demo."</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
